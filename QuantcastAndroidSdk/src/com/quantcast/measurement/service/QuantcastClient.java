@@ -294,4 +294,9 @@ public class QuantcastClient {
     public static void setOptOut(Context context, boolean optOut) {
         QCMeasurement.INSTANCE.setOptOut(context, optOut);
     }
+
+    /**
+     * Can be called to get the Advertising Identifier (if allowed by the current policy)
+     */
+    public static String getDeviceId () { return QCMeasurement.INSTANCE.getDeviceId(); }
 }
